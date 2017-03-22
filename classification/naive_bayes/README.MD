@@ -1,4 +1,4 @@
-The very best explanation for Naive Bayes can be sought from <a href=""http://stackoverflow.com/questions/10059594/a-simple-explanation-of-naive-bayes-classificatio>this</a> post on StackOverflow. The 2nd answer from the top says it best. I'll copy paste it here for convenience.
+The very best explanation for Naive Bayes can be sought from <a href="http://stackoverflow.com/questions/10059594/a-simple-explanation-of-naive-bayes-classification">this</a> post on StackOverflow. The 2nd answer from the top says it best. I'll copy paste it here for convenience.
 
 I realize that this is an old question, with an established answer. The reason I'm posting is that is the accepted answer has many elements of k-NN (k-nearest neighbors), a different algorithm.
 
