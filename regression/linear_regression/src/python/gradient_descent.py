@@ -2,7 +2,7 @@
 """
 Created on Tue Dec 27 16:11:43 2016
 
-@author: subramanian-p
+@author: Praveen S
 """
 
 def computeCost(X, y, theta):
@@ -40,7 +40,7 @@ def plotGraph():
 import numpy as np
 import matplotlib.pyplot as plt
 
-data = np.loadtxt("ex1data.txt",delimiter=",")
+data = np.loadtxt("../../data/ex1data.txt",delimiter=",")
 
 #plotGraph()
 
