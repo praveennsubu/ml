@@ -4,7 +4,11 @@ Created on Wed Mar  8 15:30:03 2017
 
 Code to pratice Naive Bayes by writing an implementation from scratch.
 
-@author: subramanian-p
+Code from http://machinelearningmastery.com/naive-bayes-classifier-scratch-python/
+Modified the original source to implement functional programming paradigms
+wherever possible.
+
+@author: Praveen S
 """
 
 import csv
@@ -26,9 +30,8 @@ def splitDataset(dataset, splitRatio):
     #shuffling the contents of original dataset
     shuffle(dataset)
     #retrieving training set of size trainSize from dataset
-    trainSet = [dataset[x] for x in range(trainSize)]
-    #testSet will contain those records from dataset not in trainSet
-    testSet = [record for record in dataset if record not in trainSet]
+    trainSet = dataset[:trainSize]
+    testSet = dataset[trainSize:]
 
     return [trainSet, testSet]
 
