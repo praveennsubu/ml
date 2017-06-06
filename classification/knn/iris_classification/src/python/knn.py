@@ -41,7 +41,7 @@ def getResponse(neighbours):
             classVotes[response] += 1
         else:
             classVotes[response] = 1
-    sortedVotes = sorted(classVotes.iteritems(),key=operator.itemgetter(1),reverse=True)
+    sortedVotes = sorted(classVotes.items(),key=operator.itemgetter(1),reverse=True)
     return sortedVotes[0][0]
 
 def getAccuracy(testSet, predictions):
@@ -73,6 +73,7 @@ if __name__ ==  "__main__":
         predictions.append(result)
         print('> predicted=' + repr(result) + ', actual=' + repr(testSet[x][-1]))
     accuracy = getAccuracy(testSet, predictions)
+    print(testSet, predictions,sep='\n')
     print('Accuracy: ' + repr(accuracy) + '%')
 
 

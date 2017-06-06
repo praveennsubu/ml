@@ -17,11 +17,11 @@ def computeGradientDescent(X, y, theta, num_iter, alpha):
 
     J_history = np.zeros(shape=(num_iter,1))
 
-    for it in xrange(num_iter):
+    for it in range(num_iter):
        predictions = X.dot(theta).flatten()
        error = (predictions - y)
 
-       for n in xrange(len(theta)):
+       for n in range(len(theta)):
            error_n = error * X[:,n]
            theta[n][0] = theta[n][0] - alpha * (1.0)/m * error_n.sum()
 
@@ -61,7 +61,8 @@ alpha = 0.01
 #computing predictions
 theta, j = computeGradientDescent(it, y, theta, num_iter, alpha)
 
-#plt.plot(xrange(num_iter), j)
+plt.plot(range(num_iter), j)
+plt.show()
 
 result = it.dot(theta)
 plt.scatter(data[:,0], data[:,1], c='b',marker='o')

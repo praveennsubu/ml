@@ -16,6 +16,7 @@ wherever possible.
 import pandas as pd
 import math
 import numpy as np
+from sklearn.datasets import fetch_20newsgroups
 
 def loadCsv(filename):
     """
